@@ -25,7 +25,7 @@ public class KafkaTopicConfig {
 	@Bean
 	public NewTopic javaguidesJsonTopic() {
 		return TopicBuilder.name(topicJsonName)
-				.partitions(3)
+				.partitions(15)
 				.replicas(1)
 				.build();
 	}
